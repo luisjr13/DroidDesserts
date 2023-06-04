@@ -58,7 +58,6 @@
             android:layout_marginTop="40dp"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/ivDoce1"
-            app:layout_constrainten_toStartOf="+@id/ivDoce3"
             app:srcCompat="@drawable/froyo_circle"
             android:contentDescription="imagem2"/>
 

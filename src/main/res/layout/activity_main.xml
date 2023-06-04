@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingHorizontal="24dp"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tvTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/droid_desserts"
+            android:textColor="@color/default_text"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/ivDoce1"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="24dp"
+            android:src="@drawable/donut_circle"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvTitle"
+            android:contentDescription="imagem1" />
+
+        <TextView
+            android:id="@+id/TvDoce1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:text="@string/version_donut"
+            android:textColor="@color/default_text"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="@+id/ivDoce1"
+            app:layout_constraintStart_toEndOf="@id/ivDoce1"
+            app:layout_constraintTop_toTopOf="@id/ivDoce1" />
+
+        <ImageView
+            android:id="@+id/ivDoce2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="40dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/ivDoce1"
+            app:layout_constrainten_toStartOf="+@id/ivDoce3"
+            app:srcCompat="@drawable/froyo_circle"
+            android:contentDescription="imagem2"/>
+
+        <TextView
+            android:id="@+id/TvDoce2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:text="@string/version_ice_cream"
+            android:textColor="@color/default_text"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="@+id/ivDoce2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/ivDoce2"
+            app:layout_constraintTop_toTopOf="@id/ivDoce2" />
+
+        <ImageView
+            android:id="@+id/ivDoce3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="32dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ivDoce2"
+            app:srcCompat="@drawable/icecream_circle"
+            tools:ignore="MissingConstraints"
+            android:contentDescription="imagem3" />
+
+        <TextView
+            android:id="@+id/tvDoce3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:text="Version Ice Scream"
+            android:textColor="@color/default_text"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="@+id/ivDoce3"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/ivDoce3"
+            app:layout_constraintTop_toTopOf="@id/ivDoce3" />
+
+        <TextView
+            android:id="@+id/tvSampleText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="@string/Simple_Text"
+            app:layout_constraintTop_toBottomOf="@+id/ivDoce3" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fabOpenScreen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            tools:layout_editor_absolutey="450dp"
+            app:srcCompat="@android:drawable/ic_media_play"
+            android:contentDescription="Abrir outra tela"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>
